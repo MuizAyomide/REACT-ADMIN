@@ -20,6 +20,7 @@
             gap: 10px;
             padding: 10px;
             border-radius: 5px;
+            transition: 0.2s ease-in-out;
 
             &:hover{
                 background: $soft-bg;
