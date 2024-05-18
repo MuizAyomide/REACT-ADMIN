@@ -7,15 +7,15 @@ const Navbar = () => {
         <img src="logo.svg" alt="" />
         <span>muizadmin</span>
       </div>
-      <div className="links">
+      <div className="icons">
         <img src="search.svg" alt="" className="icon" />
         <img src="app.svg" alt="" className="icon" />
         <img src="expand.svg" alt="" className="icon" />
         <div className="notification">
-          <img src="notification.svg" alt="" /><span>1</span>
+          <img src="notifications.svg" alt="" /><span>1</span>
         </div>
         <div className="user">
-          <img src="image" alt="" />
+          <img src="noavatar.png" alt="" />
           <span>Muiz</span>
         </div>
 
