@@ -11,12 +11,15 @@ import Products from "./pages/Products/Products";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import Menu from "./Components/Menu/Menu";
+import Login from "./pages/Login/Login";
+import './styles/global.scss'
 
 
 
 function App() {
 
   const Layout = () =>{
+
     return(
       <div className='main'>
         <Navbar/>
@@ -53,6 +56,11 @@ children:[
   }
 ]
     },
+    {
+      path:'/login',
+      element: <Login/>
+
+    }
     
           ]);
 
