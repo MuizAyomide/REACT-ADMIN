@@ -4,7 +4,8 @@ import './Footer.scss'
 const Footer = () => {
   return (
     <div className='footer'>
-      Foot
+      <span>muizadmin</span>
+      <span>&copy; Muiz Dev Admin Dashboard</span>
     </div>
   )
 }
