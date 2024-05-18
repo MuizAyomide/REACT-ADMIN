@@ -15,7 +15,7 @@ const Navbar = () => {
           <img src="notifications.svg" alt="" /><span>1</span>
         </div>
         <div className="user">
-          <img src="noavatar.png" alt="" />
+          <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
           <span>Muiz</span>
         </div>
 
