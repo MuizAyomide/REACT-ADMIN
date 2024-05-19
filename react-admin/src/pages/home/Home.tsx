@@ -1,5 +1,8 @@
+import BarChartBox from '../../Components/BArChartBox/BarChartBox'
 import Chartbox from '../../Components/Chatbox/Chartbox'
+import PieChartBox from '../../Components/PieChartBox/PieChartBox'
 import TopBox from '../../Components/TopBox/TopBox'
+import { barChartBoxRevenue, barChartBoxVisit, chartBoxConversion, chartBoxProduct, chartBoxRevenue, chartBoxUser } from '../../data'
 import './home.scss'
 
 const Home = () => {
@@ -9,21 +12,30 @@ const Home = () => {
         <TopBox/>
       </div>
       <div className="box box2">
-        <Chartbox/>
+        <Chartbox {...chartBoxUser}/>
       </div>
       <div className="box box3">
-      <Chartbox/>
+      <Chartbox {...chartBoxProduct}/>
       </div>
       <div className="box box4">      
-        <Chartbox/>
+        <PieChartBox/>
 </div>
       <div className="box box5">  
-      <Chartbox/>    
+      <Chartbox {...chartBoxConversion}/>    
 </div>
-      <div className="box box6">box6</div>
-      <div className="box box7">box7</div>
-      <div className="box box8">box8</div>
-      <div className="box box9">box9</div>
+      <div className="box box6">
+      <Chartbox {...chartBoxRevenue}/>
+      </div>
+      <div className="box box7">
+      </div>
+      <div className="box box8">
+      <BarChartBox {...barChartBoxVisit}/>
+        
+      </div>
+      <div className="box box9">
+      <BarChartBox {...barChartBoxRevenue}/>
+        
+      </div>
     </div>
   )
 }
