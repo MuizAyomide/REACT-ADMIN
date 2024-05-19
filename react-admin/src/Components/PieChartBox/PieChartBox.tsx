@@ -42,11 +42,11 @@ const PieChartBox = () => {
                 data.map((item)=>(
                     <div className="option" key={item.name}>
                         <div className="title">
-                            <div className="dot" style={{background:item.color}}>
+                            <div className="dot" style={{background:item.color}}></div>
                                 <span>{item.name}</span>
-                            </div>
-                            <span>{item.value}</span>
+                            
                         </div>
+                            <span>{item.value}</span>
                     </div>
                 ))
             }
