@@ -51,7 +51,7 @@ const DataTable = () => {
     return (
         <div className='datatable'>
             <DataGrid
-            className='datagrid'
+                className='datagrid'
                 rows={rows}
                 columns={columns}
                 initialState={{
@@ -61,21 +61,21 @@ const DataTable = () => {
                         },
                     },
                 }}
-                slots={{toolbar: GridToolbar}}
+                slots={{ toolbar: GridToolbar }}
                 slotProps={{
-                    toolbar:{
-                        showQuickFilter:true,
+                    toolbar: {
+                        showQuickFilter: true,
                         quickFilterProps: { debounceMs: 500 },
 
                     },
-            }}
+                }}
                 pageSizeOptions={[5]}
                 checkboxSelection
                 disableRowSelectionOnClick
                 disableColumnFilter
                 disableColumnSelector
                 disableDensitySelector
-                />
+            />
         </div>
     )
 }
