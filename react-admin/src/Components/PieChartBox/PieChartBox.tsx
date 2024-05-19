@@ -16,40 +16,40 @@ const PieChartBox = () => {
     <div className='piechartbox'>
       <h1>Leads by Source</h1>
       <div className="chart">
-        <ResponsiveContainer width="99%" height={300}>
-        <PieChart >
-            <Tooltip
-            
-            contentStyle={{background: 'white', borderRadius:'5px'}}/>
+            <ResponsiveContainer width="99%" height={300}>
+            <PieChart >
+                <Tooltip
+                
+                contentStyle={{background: 'white', borderRadius:'5px'}}/>
 
-        <Pie
-          data={data}
-          innerRadius={'70%'}
-          outerRadius={'90%'}
-          paddingAngle={5}
-          dataKey="value"
-        >
-          {data.map((item, index) => (
-            <Cell key={item.name} fill={item.color} />
-          ))}
-        </Pie>
-      </PieChart>
-        </ResponsiveContainer>
+            <Pie
+            data={data}
+            innerRadius={'70%'}
+            outerRadius={'90%'}
+            paddingAngle={5}
+            dataKey="value"
+            >
+            {data.map((item, index) => (
+                <Cell key={item.name} fill={item.color} />
+            ))}
+            </Pie>
+             </PieChart>
+            </ResponsiveContainer>
       </div>
 
       <div className="options">
-        {
-            data.map((item)=>(
-                <div className="option" key={item.name}>
-                    <div className="title">
-                        <div className="dot" style={{background:item.color}}>
-                            <span>{item.name}</span>
+            {
+                data.map((item)=>(
+                    <div className="option" key={item.name}>
+                        <div className="title">
+                            <div className="dot" style={{background:item.color}}>
+                                <span>{item.name}</span>
+                            </div>
+                            <span>{item.value}</span>
                         </div>
-                        <span>{item.value}</span>
                     </div>
-                </div>
-            ))
-        }
+                ))
+            }
       </div>
     </div>
   )
