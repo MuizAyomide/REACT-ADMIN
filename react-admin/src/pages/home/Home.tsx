@@ -28,7 +28,7 @@ const Home = () => {
         <Chartbox {...chartBoxRevenue} />
       </div>
       <div className="box box7">
-<BigChartBox/>
+        <BigChartBox />
       </div>
       <div className="box box8">
         <BarChartBox {...barChartBoxVisit} />
