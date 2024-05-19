@@ -18,55 +18,55 @@ import './styles/global.scss'
 
 function App() {
 
-  const Layout = () =>{
+  const Layout = () => {
 
-    return(
+    return (
       <div className='main'>
-        <Navbar/>
-<div className="container">
-  <div className="menuContainer">
-    <Menu/>
-  </div>
-  <div className="contentContainer">
-    <Outlet/>
-  </div>
-</div>
-        <Footer/>
+        <Navbar />
+        <div className="container">
+          <div className="menuContainer">
+            <Menu />
+          </div>
+          <div className="contentContainer">
+            <Outlet />
+          </div>
+        </div>
+        <Footer />
       </div>
     )
-    
+
   }
 
   const router = createBrowserRouter([
     {
-path:'/',
-element:<Layout/>,
-children:[
-  {
-    path:'/',
-    element:<Home/>
-  },
-  {
-    path:'/products',
-    element:<Products/>
-  },
-  {
-    path:'/users',
-    element:<Users/>
-  }
-]
+      path: '/',
+      element: <Layout />,
+      children: [
+        {
+          path: '/',
+          element: <Home />
+        },
+        {
+          path: '/products',
+          element: <Products />
+        },
+        {
+          path: '/users',
+          element: <Users />
+        }
+      ]
     },
     {
-      path:'/login',
-      element: <Login/>
+      path: '/login',
+      element: <Login />
 
     }
-    
-          ]);
 
-          return  <RouterProvider router={router}/>
+  ]);
 
-          
+  return <RouterProvider router={router} />
+
+
 }
 
-          export default App
+export default App
