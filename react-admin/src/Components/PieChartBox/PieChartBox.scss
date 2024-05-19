@@ -16,16 +16,24 @@
         gap: 10px;
         font-size: 14px;
 
-        .title{
+        .option{
             display: flex;
+            flex-direction: column;
             gap: 10px;
             align-items: center;
 
-
-            .dot{
-                width: 10px;
-                height: 10px;
-                border-radius: 50%;
+            
+            .title{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                
+                
+                .dot{
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                }
             }
         }
     }
