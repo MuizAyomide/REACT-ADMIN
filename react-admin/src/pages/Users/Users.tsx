@@ -8,7 +8,7 @@ const Users = () => {
         <h1>Users</h1>
         <button>Add new user</button>
       </div>
-      <DataTable/>
+      <DataTable />
     </div>
   )
 }
