@@ -42,10 +42,17 @@
             }
 
         }
+
+        hr{
+            width: 90%;
+            height: 0;
+            border: 0.5px solid gray;
+        }
         .chart{
             margin-top: 50px;
             width: 80%;
             height: 400px;
+            margin: 2px 0px;
 
         }
     }
