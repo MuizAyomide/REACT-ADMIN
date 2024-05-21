@@ -8,34 +8,34 @@ const columns: GridColDef[] = [
   { field: "id", headerName: "ID", width: 90 },
   {
     field: "img",
-    headerName: "Avatar",
+    headerName: "Image",
     width: 100,
     renderCell: (params) => { 
-      return <img src={params.row.img || "/noavatar.png"} alt="" />;
+      return <img src={params.row.img} alt="" />;
     },
   },
   {
-    field: "firstName",
+    field: "title",
     type: "string",
-    headerName: "First name",
+    headerName: "Title",
+    width: 250,
+  },
+  {
+    field: "color",
+    type: "string",
+    headerName: "Color",
     width: 150,
   },
   {
-    field: "lastName",
+    field: "price",
     type: "string",
-    headerName: "Last name",
-    width: 150,
-  },
-  {
-    field: "email",
-    type: "string",
-    headerName: "Email",
+    headerName: "Price",
     width: 200,
   },
   {
-    field: "phone",
+    field: "producer",
     type: "string",
-    headerName: "Phone",
+    headerName: "Producer",
     width: 200,
   },
   {
@@ -45,8 +45,8 @@ const columns: GridColDef[] = [
     type: "string",
   },
   {
-    field: "verified",
-    headerName: "Verified",
+    field: "inStock",
+    headerName: "In Stock",
     width: 150,
     type: "boolean",
   },
