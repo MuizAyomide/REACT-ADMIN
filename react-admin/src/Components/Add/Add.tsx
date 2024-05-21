@@ -19,7 +19,7 @@ const Add = (props: Props) => {
     }
     return (
         <div className='add'>
-            <div className="model">
+            <div className="modal">
                 <span className='close' onClick={() => props.setOpen(false)}>X</span>
                 <h1>Add new {props.slug}</h1>
                 <form onSubmit={handleSubmit}>
@@ -29,7 +29,6 @@ const Add = (props: Props) => {
                             <div className="item">
                                 <label>{column.headerName}</label>
                                 <input type={column.type} placeholder={column.field} />
-
                             </div>
                         ))}
                     <button>Send</button>
