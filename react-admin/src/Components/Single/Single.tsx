@@ -99,7 +99,7 @@ const Single = () => {
   >
     <XAxis dataKey='name'/>
     <YAxis/>
-    <Tooltip />
+    {/* <Tooltip /> */}
     <Legend/>
     <Line
     type='monotone'
