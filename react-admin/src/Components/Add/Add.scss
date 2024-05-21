@@ -1,0 +1,19 @@
+
+
+.add{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.724);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.model{
+    padding: 50px;
+    border-radius: 10px;
+    background: #000;
+}
