@@ -8,7 +8,7 @@ const User = () => {
         //fetch data and fetch to single component
   return (
     <div className='user'>
-      <Singl {...singleUser}/>
+      <Single {...singleUser}/>
     </div>
   )
 }
