@@ -3,6 +3,7 @@ import "./Users.scss";
 import { useState } from "react";
 import { userRows } from "../../data";
 import DataTable from "../../Components/DataTable/DataTable";
+import Add from "../../Components/Add/Add";
 // import { useQuery } from "@tanstack/react-query";
 
 const columns: GridColDef[] = [
@@ -11,7 +12,7 @@ const columns: GridColDef[] = [
     field: "img",
     headerName: "Avatar",
     width: 100,
-    renderCell: (params) => {
+    renderCell: (params) => { 
       return <img src={params.row.img || "/noavatar.png"} alt="" />;
     },
   },
@@ -80,7 +81,7 @@ const Users = () => {
       ) : (
         <DataTable slug="users" columns={columns} rows={data} />
       )} */}
-      {/* {open && <Add slug="user" columns={columns} setOpen={setOpen} />} */}
+      {open && <Add slug="user" columns={columns} setOpen={setOpen} />}
     </div>
   );
 };
