@@ -1,79 +1,70 @@
-.single{
+.single {
     display: flex;
 
-
-    .view{
+    .view {
         flex: 1;
 
-        .info{
-
-            .top-info{
+        .info {
+            .top-info {
                 display: flex;
                 align-items: center;
                 gap: 20px;
-                
-                img{
+
+                img {
                     width: 100px;
                     height: 100px;
                     border-radius: 20px;
                     object-fit: cover;
                 }
 
-                .h1{
+                .h1 {
                     font-weight: 500px;
                 }
-
             }
-            .details{
-
+            .details {
                 font-size: 18px;
 
-                .item{
+                .item {
                     margin: 30px 0px;
-                    
-                    .item-title{
+
+                    .item-title {
                         font-weight: 600;
                         text-transform: capitalize;
                         margin-right: 10px;
-
                     }
                 }
-
             }
-
         }
 
-        hr{
+        hr {
             width: 90%;
             height: 0;
             border: 0.5px solid gray;
             margin: 2px 0px;
-
         }
-        .chart{
+        .chart {
             margin-top: 50px;
             width: 80%;
             height: 400px;
-
         }
     }
-    .activities{
+    .activities {
         flex: 1;
 
-        h2{
+        h2 {
             margin-bottom: 20px;
         }
 
-        ul{
-            li{
+        ul {
+            li {
                 list-style-type: none;
                 position: relative;
                 width: 1px;
                 padding-top: 50px;
                 background: #f45b69;
 
-                &::after{
-                    content: '';
+                &::after {
+                    content: "";
                     position: absolute;
                     left: 50%;
                     bottom: 0;
@@ -84,16 +75,16 @@
                     transform: translateX(-50%);
                 }
 
-                div{
+                div {
                     min-width: 480px;
                     padding: 15px;
                     background: #f25b684b;
 
-                    p{
+                    p {
                         margin-bottom: 5px;
                     }
 
-                    time{
+                    time {
                         font-size: 12px;
                     }
                 }
