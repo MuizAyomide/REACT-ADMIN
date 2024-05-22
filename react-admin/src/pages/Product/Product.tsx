@@ -5,10 +5,10 @@ import { singleProduct } from '../../data'
 
 const Product = () => {
 
-    //fetch data and fetch to single component
+  //fetch data and fetch to single component
   return (
     <div className='product'>
-      <Single {...singleProduct}/>
+      <Single {...singleProduct} />
     </div>
   )
 }
