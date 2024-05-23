@@ -16,6 +16,8 @@
     "@mui/x-data-grid": "^7.5.0",
     "@tanstack/react-query": "^5.37.1",
     "core-js": "^3.23.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
