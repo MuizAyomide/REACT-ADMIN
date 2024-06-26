@@ -3,6 +3,7 @@ import DataTable from '../../Components/DataTable/DataTable';
 import Add from '../../Components/Add/Add';
 import { GridColDef } from '@mui/x-data-grid';
 import { products } from '../../data';
+import './Products.scss'
 
 const columns: GridColDef[] = [
   { field: "id", headerName: "ID", width: 90 },
@@ -67,7 +68,7 @@ const Products = () => {
   // });
 
   return (
-    <div className="users">
+    <div className="products">
       <div className="info">
         <h1>Users</h1>
         <button onClick={() => setOpen(true)}>Add New Products</button>
