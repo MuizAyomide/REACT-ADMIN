@@ -2,7 +2,6 @@
 @import '../../styles/responsive.scss';
 
 .home{
-
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(4, 1fr);
@@ -17,9 +16,7 @@
 }
 @include sm{
     grid-template-columns: repeat(1, 1fr);
-}
-@include sm{
-    grid-auto-rows: minmax(120px, auto);
+    grid-auto-rows: minmax(100px, auto);
 }
 
 
@@ -27,11 +24,16 @@
         padding: 20px;
         border-radius: 10px;
         border: 1px solid $soft-bg;
-
+        @include sm{
+            margin: 10px;
+        padding: 10px;
+        width: 200px;
+        }
     }
 
     .box1{
         grid-row: span 3;
+        
     }
 
     .box4{
