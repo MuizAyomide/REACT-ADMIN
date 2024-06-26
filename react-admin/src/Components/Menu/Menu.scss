@@ -26,6 +26,11 @@
             padding: 10px;
             border-radius: 5px;
             transition: 0.2s ease-in-out;
+            @include sm{
+                width: max-content;
+            padding: 5px;
+
+             }
 
             @include xxl{
                 width: max-content;
